@@ -99,6 +99,37 @@ Observe colored console output for bypassed detections. For VAPT reports, log ou
 
 ---
 
+## Limitations
+While highly effective against classic and many modern root detection libraries, F-RootKiller has known limitations:
+
+* Complex/Elite Detectors
+It currently struggles or fails against the current kings of root detection in 2025, including:
+1. Momo (WeishuDev) – Strongest public Zygisk/Magisk detector
+2. Hunter (com.zhenxi.hunter) – Aggressive RASP + anti-Frida
+3. Other advanced tools that use deep native/JNI checks, memory integrity, continuous RASP, or early zygote anti-tamper
+
+* Server-Side Validation
+The script cannot bypass Google Play Integrity API where server-side validation occurs (e.g., DroidGuard attestation, strong integrity verdicts sent to backend).
+Client-side bypasses are possible, but server-decided verdicts remain unaffected.
+
+These limitations are actively being researched - the tool is not "complete" against top-tier protections.
+
+---
+
+## Future Improvements
+Planned enhancements include:
+
+* Advanced anti-RASP & anti-Frida hardening (ptrace evasion, memory checksum spoofing, thread/process name randomization)
+* Static Frida Gadget embedding (for spawn without external server)
+* ZygiskFrida integration (silent injection via Magisk)
+* Targeted hooks for Momo, Hunter, and other elite detectors (after decompilation & analysis)
+* Better Play Integrity client-side simulation (token forgery, nonce handling)
+* Emulator & virtual environment evasion improvements
+
+  ---
+
+We aim to eventually challenge and defeat the current kings of root detection (Momo, Hunter, etc.) in future releases.
+
 ## Legal Disclaimer
 This tool is provided for educational and security research purposes only. It is intended to assist in vulnerability assessment, penetration testing, and QA of Android apps in controlled environments.
 
