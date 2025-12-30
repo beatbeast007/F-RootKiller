@@ -1,3 +1,6 @@
+<img width="747" height="382" alt="image" src="https://github.com/user-attachments/assets/3a63d72d-6b25-415e-9947-cd7b1d83f5f3" />
+
+
 # F-RootKiller: Advanced Android Root Detection Bypass Suite
 
 **F-RootKiller** is an advanced Frida-based instrumentation suite designed for **Android App VAPT** (Vulnerability Assessment and Penetration Testing) and security auditing. It enables researchers to bypass deep-rooted environment integrity checks by masking root indicators, spoofing system properties, and intercepting native library calls in real-time.
