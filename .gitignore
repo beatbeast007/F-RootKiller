@@ -1,0 +1,45 @@
+# Frida & Android related
+frida-server*
+frida-gadget*
+gadget-android-*.so
+*.so.xz
+/data/
+adb/
+magisk/
+zygisk/
+kernelSU/
+
+# Temporary & build files
+*.js.map
+*.pyc
+__pycache__/
+*.log
+*.tmp
+*.bak
+*~
+
+# IDE & editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python & pip
+pip-log.txt
+pip-delete-this-directory.txt
+.env
+.venv/
+venv/
+
+# macOS junk
+.DS_Store
+
+# Windows junk
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Misc
+node_modules/
+dist/
+build/
